@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainPageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:id="@+id/counter"
+        android:text="All Word Number:"/>
+    <LinearLayout
+      android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+            android:id="@+id/search_english"
+          android:layout_weight="3"
+
+        android:hint="Search your word"/>
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:id="@+id/search_english_button"
+              android:src="@drawable/ic_baseline_search_24"/>
+
+      </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/search_persian"
+            android:layout_weight="3"
+
+            android:hint="Search your word"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/search_persian_button"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/english_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/persian_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/wordDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/synonym"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/wordUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button_new_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To ADD New Word" />
+
+    <Button
+        android:id="@+id/button_word_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go TO WEB WORD LINK" />
+
+
+</LinearLayout>
